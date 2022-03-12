@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial';
+}
+
+.card{
+    width: 350px;
+    margin: 80px auto;
+    box-shadow: 0 0 3px;
+    border-radius: 1em;
+}
+
+.card-img{
+    width: 100%;
+    display: block;
+    border-radius: 1em 1em 0 0;
+}
+
+.card-container{
+    border-radius: 0 0 1em 1em;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+
+.card-title{
+    margin-bottom: 10px;
+}
+
+.card-paragraph{
+    line-height: 1.5;
+    text-align: start;
+}
+
+.card-button{
+    display: inline-block;
+    background-color: #CC021C;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    margin-top: 1em;
+    border-radius: 2em;
+}

@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-size: 25px;
+}
+
+
+.block{
+    background-color: teal;
+    
+    color: white;
+    padding: 30px;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.inline{
+    font-size: 20px;
+    display: inline-block;
+    background-color: crimson;
+    color: white;
+    margin-bottom: 40px;
+    width: 200px;
+    height: 50px;
+}
+
+.button{
+    display: inline-block;
+    background-color: steelblue;
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial';
+    padding: 15px 40px;
+
+    border-radius: 30px;
+    /* margin: 50px; */
+
+    width: 300px;
+    margin: 0 auto;
+}

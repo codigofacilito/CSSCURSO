@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    margin: 70px;
+    color:hotpink;
+    color: rgba(255, 105, 180, 0.502);
+    color: #e05bd5;
+    color: hsl(200, 100%, 30%);
+    /* rgb -> Red Green Blue */
+    /* hsl -> Hue Saturation Lightness */
+}
+
+.background{
+
+    height: 600px;
+    /* margin: 50px 0; */
+    background-color: #4682b4;
+    /* background-image: url('images/cody.png'); */
+    /* background-repeat: no-repeat;
+    background-size: 100px;
+    background-position:center; */
+    background-image: linear-gradient(rgba(255, 105, 180, 0.527), rgba(70, 131, 180, 0.534)), url('images/tablet.jpg');
+    background-size: cover;
+    background-position: center;
+    /* top, left, bottom, right center */
+    padding: .1px;
+}
+
+h2{
+    margin-top: 100px;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+}

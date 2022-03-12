@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial;
+}
+
+.element{
+    margin: 80px auto;
+    width: 50%;
+    height: 200px;
+    background-color: royalblue;
+}
+
+
+@media (min-width:600px){
+
+
+    .element{
+        background-color: crimson;   
+    }
+
+}
+
+@media (min-width:900px){
+
+
+    .element{
+        background-color: #000;   
+    }
+
+}
+
+
+
+/* @media (max-width: 800px){
+
+
+    .element{
+        background-color: crimson;   
+    }
+
+}
+
+
+@media (max-width: 500px){
+
+
+    .element{
+        background-color: blueviolet;   
+    }
+
+} */
+
+

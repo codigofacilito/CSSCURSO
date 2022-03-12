@@ -1,0 +1,43 @@
+:root{
+    --bordes-colors:7px dashed black;
+    --color-principal: black;
+
+    --padding-botones:15px 30px;
+
+    --gradientes: linear-gradient(royalblue, hotpink);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+}
+
+.container{
+    --color-principal: royalblue;
+    --fuentes: cursive;
+}
+
+.title{
+    border: var(--bordes-colors);
+    color:var(--color-principal);
+    font-family: var(--fuentes);
+}
+
+.btn{
+    border: var(--bordes-colors);
+    display: inline-block;
+    padding: var(--padding-botones);
+    /* background-image:var(--gradientes); */
+    background-color: var(--color-principal);
+    color: #fff;
+    text-decoration: none;
+}
+
+.paragraph{
+    border: var(--bordes-colors);
+    color:var(--color-principal);
+    font-family: var(--fuentes);
+}

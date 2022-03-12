@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.element{
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    margin: 60px;
+    border-radius: 50%;
+
+    /* animation-name: mover;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction:alternate; */
+    /* animation-delay: 3s; */
+    /* animation-fill-mode: both; */
+    
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+    animation: infinite ease-in alternate 2s both 2s mover ;
+}
+
+/* .element:hover{
+    animation-play-state: running;
+} */
+
+@keyframes mover {
+    0%{
+        transform: translate(0) scale(.5);
+        background-color: crimson;
+    }
+    25%{
+        transform: translate(100%);
+        background-color: salmon;
+    }
+    50%{
+        transform: translate(100%, 100%);
+        background-color: slateblue;
+    }
+    75%{
+        transform: translate(0, 100%);
+        background-color: teal;
+    }
+    100%{
+        transform: translate(100%, 100%);
+    }
+}
+
+@keyframes crecer {
+    0%{
+        transform: scaleY(1);
+    }
+    20%{
+        transform: scaleY(1.2);
+    }
+    30%{
+        transform: scaleY(2);
+    }
+    60%{
+        transform: scaleY(1.5);
+    }
+    100%{
+        transform: scaleY(2.3);
+    }
+}
+
+@keyframes cambia-color {
+    from{
+        background-color: #000;
+    }
+
+    to{
+        background-color: steelblue;
+    }
+}
+
+

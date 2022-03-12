@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: Arial;
+}
+
+.button{
+    margin: 50px;
+    display: block;
+    color: #fff;
+    text-decoration: none;   
+    padding: 20px 0;
+    text-align: center;
+    width: 200px; 
+    transition: .3s all;
+}
+
+
+
+.btn-blue{
+    background-color: slateblue;
+}
+
+/* .btn-blue:active{
+    font-size: 30px;
+} */
+
+
+.btn-red{
+    background-color: crimson;
+}
+
+/* .btn-red:hover{
+    transform: scale(1.2);
+} */
+
+.btn-tomato{
+    background-color: tomato;
+}
+
+/* .elemento_referencia + .hermano_siguiete{
+
+} */
+
+/* .btn-blue:hover ~ .button{
+    transform: translate(100%);
+} */
+
+
+
+
+
+/* 
+.element:target{
+    transform: translate(100%);
+} */
+
+.input{
+    display:block;
+    margin: 20px;
+    padding: 16px;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* .input:focus + .label{
+    background-color: aqua;
+} */
+
+
+.label{
+    
+    background-color: crimson;
+    color: #fff;
+}
+
+.check{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.check:checked + .label{
+    background-color: green;
+    
+}
+
+.element{
+    width: max-content;
+    padding: 20px;
+    background-color: steelblue;
+    color: #fff;
+    font-size: 30px;
+    margin: 60px;
+   
+}
+
+.element::before{
+    content: "";
+    display: block;
+    background-color: green;
+    width: 300px;
+    height: 200px;
+}
+
+
+.element::after{
+    content: "";    
+    display: block;
+    padding: 16px;
+    background-color: crimson;
+    width: 300px;
+    height: 500px;
+}

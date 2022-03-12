@@ -1,0 +1,68 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.card{
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: slateblue;
+    color: #fff;
+    padding: 40px 20px;
+    
+    /* height: 500px; */
+}
+
+.img{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.title{
+    /* line-height: 500px; */
+    text-align: center;
+
+    /* letter-spacing: -4px; */
+    /* word-spacing:-20px ; */
+    /* hyphens:auto ; */
+
+    /* width: 150px; */
+    
+    overflow-wrap:break-word ;
+    /* text-align: start; */
+    font-weight: 900;
+    font-style: italic;
+
+    font-size:50px;
+
+    border: 1px solid #fff;
+
+    /* 50px * 2 = 100px */
+}
+
+.paragraph{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    
+    font-size: 16px;
+    line-height: 2;
+}
+
+.paragraph--first{
+    text-transform: lowercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+    font-weight: 300;
+    font-style: italic;
+}
+

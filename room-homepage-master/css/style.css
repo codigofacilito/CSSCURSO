@@ -1,0 +1,176 @@
+:root{
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.main{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    grid-template-areas: 
+    "main"
+    "buy"
+    "image1"
+    "about"
+    "image2";
+}
+
+.main__hero{
+    min-height: 500px;
+    background-image: url("../images/desktop-image-hero-1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-area: main;
+}
+
+.main__nav{
+    display: flex;
+}
+
+.main__links{
+    display: none;
+}
+
+.main__logo{
+    margin: 0 auto;
+}
+
+.main__controls{
+    grid-area: main;
+    align-self: end;
+    justify-self: end;
+    background-color: var(--black);
+    display: flex;
+    width: 100px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__arrows{
+    height: 40%;
+}
+
+.main__buy{
+    grid-area: buy;
+}
+
+.main__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.main__title{
+    color: var(--black);
+}
+
+.main__paragraph{
+    line-height: 1.5;
+    margin: 1em 0 2em;
+    color: var(--dark-gray);
+}
+
+.main__paragraph--about{
+    margin: 1em 0 0 0;
+}
+
+.main__cta{
+    text-decoration: none;
+    color: var(--very-dark-gray);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.main__arrow{
+    margin-left: 20px;
+}
+
+.main__bg{
+    grid-area: image1;
+    min-height: 250px;
+    height: 100%;
+    background-image: url("../images/image-about-dark.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main__about{
+    grid-area: about;
+}
+
+.main__bg--second{
+    grid-area: image2;
+    background-image: url("../images/image-about-light.jpg");
+}
+
+@media (min-width:768px){
+    .container{
+        width: 85%;
+        padding: 70px 0;
+    }
+
+
+    .main{
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 
+        "main main main main buy buy buy"
+        "main main main main buy buy buy"
+        "main main main main buy buy buy"
+        "image1 image1 about about about image2 image2"
+        "image1 image1 about about about image2 image2";
+    }
+
+    .main__controls{
+        grid-area: buy;
+        justify-self: start;
+    }
+
+    .main__hamburguer{
+        display: none;
+    }
+
+    .main__links{
+        padding: 0;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1em;
+        margin-left: 10%;
+    }
+
+    .main__list{
+        list-style: none;
+    }
+
+    .main__link{
+        color: var(--white);
+        text-decoration: none;
+    }
+
+    .main__logo{
+        margin: 0;
+    }
+}

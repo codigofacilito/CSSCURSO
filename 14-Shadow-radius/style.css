@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.element{
+    margin: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: slateblue;
+
+    /* box-shadow:100px 200px 10px blue, 100px 100px; */
+    border-radius: 50px 100px  ;
+
+    /* border-top-left-radius: 50px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px; */
+}

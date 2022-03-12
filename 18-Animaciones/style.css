@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+.element{
+    width: 200px;
+    height: 200px;
+    background-color: steelblue;
+    margin: 60px;
+    
+    /* transition-property: all;
+    transition-duration:0s;
+    transition-timing-function:ease;
+    transition-delay: 0s; */
+    
+    transition:ease-in transform 1s 2s ;
+
+    /* */
+}
+
+
+.container:hover .element{
+    background-color: #000;
+    transform: translate(200px);
+}

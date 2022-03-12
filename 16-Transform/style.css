@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.element:hover{
+    
+}
+
+
+.element{
+    width: 200px;
+    height: 200px;
+    background-color: steelblue;
+    margin: 60px;
+    /* transition: 1s; */
+
+    /* transform: scaleX(2) rotate(90deg) ; */
+
+
+    /* transform: translate(100px, 200px); */
+    /* transform: rotate(130deg); */
+
+    /* transform: scale(2,1); */
+
+    /* transform: skewX(40deg) ; */
+
+  
+ 
+
+    /* 
+        0 360 deg
+        0 400 grad
+        0 6.28 rad
+        0 1 turn 
+    */
+
+}
+
+.element2{
+    background-color: tomato;
+    transform: unset;
+}

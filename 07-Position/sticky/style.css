@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    min-height: 300vh;
+}
+
+.container{
+    width: 200vw;
+    height: 300px;
+    background-color: aquamarine;
+}
+
+
+.sticky{
+    width: 140px;
+    height: 140px;
+    background-color: slateblue;
+    position: sticky;
+    
+    
+    left: 40px;
+}
